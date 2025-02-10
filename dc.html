@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Discord Login</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <style>
+        /* Basic reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            background-image: url('https://i.redd.it/new-and-slightly-older-discord-login-screen-as-a-png-v0-zznw60dgve3d1.png?width=1600&format=png&auto=webp&s=8c9aac38a07b339966ff21fb76e12ef551d6a9c2');
+            background-size: cover;
+            background-position: center;
+            font-family: 'Inter', sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .login-container {
+            background-color: #313338; /* Solid background with the new color */
+            border-radius: 8px;
+            width: 1000px; /* Increased width of container */
+            height: 500px; /* Container height remains the same */
+            padding: 40px;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-between;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+        }
+        .login-box {
+            width: 60%; /* Increased width for the login box */
+            padding: 20px;
+        }
+        .login-container h2 {
+            font-size: 28px;
+            font-weight: 600;
+            color: white;
+            margin-bottom: 10px;
+            text-align: center; /* Centering the text */
+        }
+        .welcome-text {
+            font-size: 14px;
+            color: #b9bbbe;
+            margin-bottom: 30px;
+            text-align: center; /* Centering the text */
+        }
+        .input-label {
+            font-size: 14px;
+            font-weight: bold; /* Making the label bold */
+            color: #b9bbbe;
+            margin-bottom: 5px;
+            text-align: left;
+            width: 100%;
+            display: block;
+        }
+        .input-field {
+            width: 100%;
+            padding: 12px;
+            margin: 10px 0;
+            border: none; /* Removed the white border */
+            border-radius: 5px;
+            background-color: #1e1f22; /* Input box color */
+            color: white;
+            font-size: 16px;
+            outline: none;
+        }
+        .input-field:focus {
+            border-color: #7289da;
+        }
+        .submit-btn {
+            width: 100%;
+            padding: 12px;
+            background-color: #5865f2; /* Login button color */
+            color: white;
+            font-size: 16px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+        .submit-btn:hover {
+            background-color: #4752c4;
+        }
+        .forgot-password {
+            font-size: 14px;
+            color: #049eea; /* Forgot password color */
+            text-decoration: none;
+            text-align: left;
+            display: block;
+            margin-top: 10px;
+        }
+        .forgot-password:hover {
+            color: white;
+        }
+        .register-text {
+            font-size: 14px;
+            margin-top: 15px;
+            text-align: left;
+        }
+        .register-text span {
+            color: gray; /* "Need an account?" in gray */
+        }
+        .register-text a {
+            color: #049eea; /* "Register" in light blue */
+            text-decoration: none;
+        }
+        .register-text a:hover {
+            color: white;
+        }
+
+        /* QR Code Image Section */
+        .qr-image {
+            width: 25%; /* Reduced width of the image */
+            text-align: center;
+        }
+        .qr-image img {
+            width: 100%;
+            border-radius: 8px;
+        }
+        .qr-text {
+            text-align: center;
+            color: white;
+            margin-top: 10px;
+        }
+        .qr-text h3 {
+            font-weight: bold;
+        }
+        .qr-text p {
+            font-size: 14px;
+            color: #b9bbbe;
+        }
+        .qr-text p span {
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div class="login-container">
+        <!-- Login Box -->
+        <div class="login-box">
+            <h2>Welcome back!</h2>
+            <p class="welcome-text">We're so excited to see you again!</p>
+            <form id="login-form">
+                <label for="username" class="input-label">EMAIL OR PHONE NUMBER</label>
+                <input type="text" id="username" class="input-field" placeholder="" required>
+
+                <label for="password" class="input-label">PASSWORD</label>
+                <input type="password" id="password" class="input-field" placeholder="" required>
+
+                <a href="#" class="forgot-password">Forgot your password?</a>
+                <button type="submit" class="submit-btn">Log in</button>
+            </form>
+
+            <div class="register-text">
+                <span>Need an account? </span><a href="#">Register</a>
+            </div>
+        </div>
+
+        <!-- QR Code Login Box -->
+        <div class="qr-image">
+            <img src="https://media.discordapp.net/attachments/974754589880508446/1338450869821374575/0D922DE8-4B6F-46E1-A423-1EC931FC4C47.jpg?ex=67ab2102&is=67a9cf82&hm=5e532e9ac84711e5195933950318389dcb2b8c6f911abefc0d48b15ad1fe1fbb&=&format=webp&width=1036&height=1206" alt="QR Code Image">
+            <div class="qr-text">
+                <h3> </h3>
+                <p> <span> </span> </p>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
