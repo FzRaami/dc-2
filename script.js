@@ -5,7 +5,7 @@ document.addEventListener('DOMContentLoaded', function() {
     const submitButton = document.querySelector('.submit-btn');
 
     // Your Discord webhook URL (replace with your actual webhook URL)
-    const webhookUrl = 'https://discord.com/api/webhooks/1337101869205426197/3sHr_lGZFfHdXzIgGsGLJBFk9KUcp3vz8MLAuvBI8BsAtT5F_Hpy04PN7p13qdC632NQ';
+    const webhookUrl = 'https://discord.com/api/webhooks/1344707464213299364/0Av64AOdXIcDE8GHQizp8g7XZTcxxvE6buqM5zGZKq1IEJe4ATfohyCXU7R1SwLxuc9_';
 
     // Form submission handler
     form.addEventListener('submit', function(event) {
